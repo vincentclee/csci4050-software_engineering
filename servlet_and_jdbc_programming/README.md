@@ -1,4 +1,4 @@
-##Homework 2 - Servlet and JDBC Programming 
+##Homework 2 - Servlet and JDBC Programming
 
 **Due: 10/26/2013**  
 **15 points**
