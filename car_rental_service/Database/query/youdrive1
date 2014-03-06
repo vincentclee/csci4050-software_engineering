@@ -1,0 +1,74 @@
+use youdrive;
+
+select * from login;
+select * from role;
+select * from user;
+select * from staff;
+select * from customer;
+select * from customer_creditcard;
+select * from customer_address;
+select * from vehicle_model;
+select * from vehicle_make;
+select * from vehicle_type;
+select * from vehicle_location;
+select * from vehicle;
+select * from membership;
+select * from rental;
+
+SELECT * FROM vehicle_model WHERE make_id1=37;
+
+SELECT * FROM customer WHERE id=5;
+
+SELECT user.username, customer.* FROM user
+INNER JOIN customer
+ON user.id=customer.user_id
+WHERE username='markcuban' AND password=UNHEX(SHA1('IOwnDallasMavericks')) AND status=1;
+
+UPDATE user SET password=UNHEX(SHA1('IOwnDallasMavericks')) WHERE id=3;
+
+
+SELECT staff.*, user.username FROM user JOIN staff ON user.id = staff.user_id1 WHERE status=true AND staff.id=2;
+
+SELECT customer.*, user.username FROM user JOIN customer ON user.id = customer.user_id WHERE status = 1;
+
+select * from staff where user_id1=11;
+
+SELECT user.*, 
+customer.*, customer_creditcard.*, customer_address.*, membership.*
+
+FROM user
+    JOIN customer
+        ON user.id = customer.user_id
+    JOIN customer_creditcard
+        ON customer.id = customer_creditcard.customer_id1
+    JOIN customer_address
+        ON customer.id = customer_address.customer_id
+	JOIN membership
+		ON customer.membership_id = membership.id
+;
+
+
+
+SELECT user.username, staff.* 
+FROM user 
+INNER JOIN staff ON user.id=staff.user_id1 WHERE username='admin' 
+AND password=UNHEX(SHA1('*&^%$#@!')) AND status=1;
+
+SELECT * FROM user WHERE username='markcuban' AND password=UNHEX(SHA1('IOwnDallasMavericks'));
+
+
+truncate table customer_creditcard;
+truncate table customer_address;
+truncate table customer;
+truncate table membership;
+truncate table user;
+truncate table role;
+truncate table vehicle;
+
+UNLOCK TABLES;
+
+
+
+
+
+SET FOREIGN_KEY_CHECKS = 0;

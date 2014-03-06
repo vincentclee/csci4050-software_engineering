@@ -1,0 +1,44 @@
+.bar {
+	height:40px;
+	background-color:green;
+	margin-left: -10px;
+    margin-right: -10px;
+    padding-top: 10px;
+    padding-right: 10px;
+}
+
+.banner {
+    background: url("../images/top_bg.jpg") no-repeat scroll center top #040404;
+    height: 320px;
+    padding: 0;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.page-centered-container {
+    height: 340px;
+    position: relative;
+}
+.page-centered-container {
+    margin: 0 auto;
+    padding: 0;
+    width: 940px;
+}
+.page-centered {
+    padding: 30px 0 0 55px;
+    width: 390px;
+    font-family: 'DINFamilyBold',Arial,sans-serif;
+	font-size: 20px;
+	color: white;
+}
+.slide-h2-short {
+	width: 250px;
+	font-size: 18px;
+}
+.slide1-btm-fill {
+    background-color: green;
+    border-top: 2px solid #FFFFFF;
+    height: 20px;
+    margin-left: -10px;
+    margin-right: -10px;
+}
