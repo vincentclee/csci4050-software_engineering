@@ -1,0 +1,8 @@
+jar cf Project1.jar Project1
+Creates new JAR (Java Archive) file named Project1.jar, compresses and stores Project1 directory and all its contents (including both data files and subdirectories).
+
+jar tf Project1.jar
+Displays contents of JAR file Project1.jar. Lists complete directory structure (including subdirectories and their contents).
+
+jar xf Project1.jar
+Extracts (uncompresses) complete contents of JAR file Project1.jar. Reconstructs directory Project1 and all its contents as subfolder of current working directory. 

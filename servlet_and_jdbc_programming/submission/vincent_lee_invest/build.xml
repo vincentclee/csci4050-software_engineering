@@ -1,0 +1,16 @@
+<project name="Stocks" default="deploy">
+	<path id="jar-files-classpath">
+		<fileset dir="web/WEB-INF/lib" includes="*.jar"/>
+	</path>
+
+	<target name="compile">
+		<javac srcdir="src" destdir="classes" includeAntRuntime="no" listfiles="yes" classpathref="jar-files-classpath"/>
+	</target>
+	<target name="deploy" depends="compile">
+		<war destfile="vincent_lee_invest.war" basedir="web" webxml="web.xml">	
+			<classes dir="classes"/>
+		</war>
+		<echo message="Copying vincent_lee_invest.war to homework2 folder..."/>
+		<copy verbose="true" overwrite="true" file="vincent_lee_invest.war" todir="/opt/jboss/standalone/deployments/homework2"/>
+	</target>
+</project>

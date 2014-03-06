@@ -1,0 +1,5 @@
+select * from company join stock_price on company.symbol=stock_price.symbol;
+
+
+select company.*, stock_price.price from company join stock_price on company.symbol=stock_price.symbol;
+
