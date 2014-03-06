@@ -139,7 +139,7 @@ checking user id and password).
 with screens designed for each part of the system’s
 functionality and suitable for different types of users
 (customers, administrators, managers).
-15 .The system should use a persistent data store (MySQL
+15. The system should use a persistent data store (MySQL
 RDBMS) for all of the relevant data.
 16. The system should use accepted standards whenever
 possible (HTML, CGI, ODBC, Servlet API, JDBC, SQL,
