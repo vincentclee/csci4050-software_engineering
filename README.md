@@ -5,6 +5,8 @@ Term | Fall 2013
 Lecturer | [Krys J. Kochut](http://cobweb.cs.uga.edu/~kochut/), kochut@cs.uga.edu
 Office | 546 GSRC
 Office Hours | T 1:30 - 3:30pm and W 9:00 - 10:00am and by appointment
+TA | [Neda Abolhassani](http://cobweb.cs.uga.edu/~neda/) na4845@uga.edu
+Office Hours | W 2:30 - 3:30pm in 307 Boyd GSRC
 Text | Object-Oriented Software Engineering: Using UML, Patterns, and Java. 3nd Ed., by Bernd Bruegge and Allen H. Dutoit, Prentice Hall, 2010.
 Grading | Homeworks & quizzes 10% <br> Midterm 25% <br>  Final 35% <br> Term project 30%
 Grading Scale | 90 - 100 A <br> 88 - 89 A- <br> 86 - 87 B+ <br> 80 - 85 B <br> 78 - 79 B- <br> 76 - 77 C+ <br> 70 - 75 C <br> 68 - 69 C- <br> 65 - 67 <t> D
